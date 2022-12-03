@@ -1,0 +1,17 @@
+describe('empty spec', () => {
+
+  it('Teste - 1', () => {
+    cy.visit('https://google.com.br')
+  })
+
+  it('Teste - 2', () => {
+    cy.get('input[name=q]').type('bruh')
+  })
+
+  it('Teste - 3', () => {
+    cy.get('form').submit()
+  })
+
+  it('Teste - 4', () => {
+    cy.contains('bruh').click()
+  })
